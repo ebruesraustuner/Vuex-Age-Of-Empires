@@ -90,7 +90,7 @@
             list-style: none;
             border: 1px solid black;
             background-color: fff;
-            padding: .25em;
+            padding: .5em;
 
             a {
                 cursor: pointer;
