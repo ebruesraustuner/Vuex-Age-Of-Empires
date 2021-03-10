@@ -50,8 +50,8 @@
                         <th>id</th>
                         <th>Name</th>
                         <th>Age</th>
-                        <th>Costs- wood</th>
-                        <th> costs - gold</th>
+                        <th>Costs</th>
+                        
                     </tr>
                     <tr :key="index" v-for="(item, index) in units" @click="addUnitSelection(item)">
                         <td v-if="!isSelectedUnit(item)" style="cursor:pointer">
@@ -60,7 +60,7 @@
                             <small>[x]</small></td>
                         <td> {{item.name}}</td>
                         <td> {{item.age}}</td>
-                        <td v-for="cost in item.cost" :key="cost"> {{cost}}</td>
+                        <td> <div v-for="cost in item.cost" :key="cost"> {{cost}}</div></td>
                     </tr>
 
                 </table>
