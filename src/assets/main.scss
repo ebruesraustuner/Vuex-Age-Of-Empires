@@ -1,0 +1,35 @@
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
+  h2 {
+      font-size: 25px;
+      padding: 0.25em;
+      font-weight: bolder;
+  }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+border: 1px solid black;
+font-weight: lighter;
+        tr {
+            text-align: center;
+            padding: 4px 0;
+            td, th {
+                padding: 8px 0;
+                border: 1px solid black;
+            }
+        
+
+            &:hover {
+                background-color: yellow;
+            }
+        }
+    }
+
+    input{
+        -webkit-appearance:checkbox;
+        border-radius: 0;
+        border: 2px solid black;
+    }
